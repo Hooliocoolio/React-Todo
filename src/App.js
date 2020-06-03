@@ -57,12 +57,19 @@ class App extends  Component {
   render() {
     return (
       <div className="App">
+{/* //--------------------------------------------------------------- */}
+{/* // begin here */}
+{/* //--------------------------------------------------------------- */}
       <h1>Welcome to your Todo List</h1>
+{/* //--------------------------------------------------------------- */}
+{/* // the next line ports over to the TodoList.js file  */}
+{/* //--------------------------------------------------------------- */}
         <TodoList
           className="todolist"
           handleToggleComplete={this.toggleTodoComplete}
           todos={this.state.todos}
         />
+{/* //--------------------------------------------------------------- */}
           <TodoForm 
           className="form"
           value={this.state.todo}

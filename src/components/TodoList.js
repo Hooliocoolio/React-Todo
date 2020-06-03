@@ -6,6 +6,10 @@ import Todo from './Todo';
 
 const TodoList = props => {
   return (
+//---------------------------------------------------------------
+// coming from App.js the app maps through our data then renders
+// it to the Todo.js File
+//---------------------------------------------------------------
     <div>
       {props.todos.map(todo => (
        <Todo
