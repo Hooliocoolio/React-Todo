@@ -1,4 +1,5 @@
 import React from 'react';
+import check from './check.svg';
 // import UseToggle from '../components/useToggle/UseToggle';
  
 const Todo = props => {
@@ -21,16 +22,16 @@ const Todo = props => {
 return (
   <div className="todo"
     style= {props.todo.completed ? { textDecoration: 'line-through' } : null}>
-    {props.todo.task}
-  
-  
-  
-  
-    <button onClick={() => props.handleToggleComplete(props.todo.id)}>
+    {props.todo.task} 
     
-    </button>
-    </div>
+  <div className="completebtn"
+    onClick={() => props.handleToggleComplete(props.todo.id) }
   
+    >
+          {props.todo.completed ? <img width="30px" src={check} alt="check" />   : null}
+
+    </div>
+    </div>
 )
 };
 

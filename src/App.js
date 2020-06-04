@@ -47,7 +47,7 @@ class App extends  Component {
     this.setState({ todos });
   };
 
-  clearCompletedTodos = e => {
+  clearCompletedTasks = e => {
     e.preventDefault();
     let todos = this.state.todos.slice();
     todos = todos.filter(todo => !todo.completed);
@@ -75,7 +75,7 @@ class App extends  Component {
           value={this.state.todo}
           handleTodoChange={this.changeTodo}
           handleAddTodo={this.addTodo}
-          handleClearTodos={this.clearCompletedTodos}
+          handleClearTodos={this.clearCompletedTasks}
         /> 
       </div>
     );
